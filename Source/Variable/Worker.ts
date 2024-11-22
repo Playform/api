@@ -78,6 +78,7 @@ export default {
 
 			if (!isValidRequest) {
 				console.error("Invalid Request");
+
 				return new Response("Bad request signature.", { status: 401 });
 			}
 		}
