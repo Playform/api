@@ -1,12 +1,6 @@
-export declare const string: (params?: ({
-    errorMap?: import("zod").ZodErrorMap | undefined;
-    invalid_type_error?: string | undefined;
-    required_error?: string | undefined;
-    message?: string | undefined;
-    description?: string | undefined;
-} & {
-    coerce?: true | undefined;
-}) | undefined) => import("zod").ZodString;
+export declare const string: (params?: import("zod").RawCreateParams & {
+    coerce?: true;
+}) => import("zod").ZodString;
 declare const _default: import("zod").ZodObject<{
     DISCORD_APPLICATION_ID: import("zod").ZodDefault<import("zod").ZodOptional<import("zod").ZodString>>;
     DISCORD_CLIENT_ID: import("zod").ZodDefault<import("zod").ZodOptional<import("zod").ZodString>>;
